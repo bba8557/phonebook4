@@ -98,9 +98,6 @@ public class PhoneController {
 	public String delete(@RequestParam("no") int no) {
 		System.out.println("PhoneController>delete()");
 
-		// 파라미터 꺼내기
-		System.out.println(no);
-
 		// Service를 통해서 삭제한다
 		int count = phoneService.personDelete(no);
 
